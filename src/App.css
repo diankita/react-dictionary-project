@@ -1,5 +1,5 @@
 .App {
-  background-color: #d7f0f7;
+  background-color: #deebef;
   padding: 50px 50px;
   min-height: 100vh;
   display: flex;
@@ -7,7 +7,13 @@
 
 }
 
-.App-link {
-  color: #61dafb;
+.App footer {
+  padding: 15px 0px;
+  font-size: small;
+  
+}
+
+.App a {
+  color: #0751a1;
 }
 
