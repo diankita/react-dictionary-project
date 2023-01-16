@@ -33,7 +33,7 @@ export default function Search() {
         ></input>
         <input type="submit" value="Search"></input>
       </form>
-      <ApiResults apiResults={results}/>
+      <ApiResults apiResults={results} />
     </div>
   );
 }

@@ -3,9 +3,9 @@ import ApiWordDefinitions from "./ApiWordDefinitions";
 
 export default function ApiResults(props) {
   if (props.apiResults) {
- return (
-    <div className="ApiResults">
-      <h1>{props.apiResults.word}</h1>
+    return (
+      <div className="ApiResults">
+        <h1>{props.apiResults.word}</h1>
 
         {props.apiResults.meanings.map(function(meaning, index) {
           return (
@@ -15,11 +15,9 @@ export default function ApiResults(props) {
             </div>
           );
         })}
-  
-    </div>
-  );
-} else {
+      </div>
+    );
+  } else {
     return null;
-  } 
- 
+  }
 }
