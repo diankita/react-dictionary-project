@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import ApiResults from "./ApiResults";
 
 export default function Search() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
 
   function handleApiResponse(response) {
-    console.log(response.data);
+    console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function searchKeyword(event) {
@@ -30,6 +33,7 @@ export default function Search() {
         ></input>
         <input type="submit" value="Search"></input>
       </form>
+      <ApiResults apiResults={results}/>
     </div>
   );
 }
