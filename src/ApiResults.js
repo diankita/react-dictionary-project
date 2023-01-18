@@ -1,4 +1,5 @@
 import React from "react";
+import ApiSynonyms from "./ApiSynonyms";
 import ApiWordDefinitions from "./ApiWordDefinitions";
 
 export default function ApiResults(props) {
@@ -12,6 +13,7 @@ export default function ApiResults(props) {
             <div key={index}>
               <h2> type: {meaning.partOfSpeech}</h2>
               <ApiWordDefinitions meaning={meaning} />
+              <ApiSynonyms synonyms={meaning.synonyms} />
             </div>
           );
         })}
