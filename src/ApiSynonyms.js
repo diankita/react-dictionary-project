@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function ApiSynonyms (props) {
-    if (props.synonyms) {
+    if (props.synonyms.length) {
     return (
         <div className="ApiSynonyms">
-          Synonyms:
+          Synonyms:{" "}
             {props.synonyms.map(function(synonym, index) {
                 return (
                     <span key={index}>
