@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function ApiWordDefinitions(props) {
+export default function ApiDefinitions(props) {
   return (
-    <div className="ApiWordDefinitions">
+    <div className="ApiDefinitions">
       {props.meaning.definitions.map(function(definition, index) {
         return (
           <div key={index}>
