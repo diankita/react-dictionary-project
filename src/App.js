@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <Search />
+      <Search defaultWord="word" />
       <footer>
         Coded by Diankita and{" "}
         <a href="https://github.com/diankita/react-dictionary-project">
