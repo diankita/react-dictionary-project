@@ -1,0 +1,24 @@
+section {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+  padding: 20px;
+  margin: 20px;
+}
+
+.Search form {
+    display: block;
+    text-align: center;
+}
+
+.input-text {
+    padding: 10px 15px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.input-submit {
+    padding: 10px 15px;
+    margin: 10px auto;
+}
+

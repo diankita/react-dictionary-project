@@ -1,0 +1,13 @@
+.ApiPhonetics {
+  margin: 15px;
+}
+
+.ApiPhonetics a {
+  color: #4a7d95;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.ApiPhonetics em {
+  opacity: 0.6;
+}
