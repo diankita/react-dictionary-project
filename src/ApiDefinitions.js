@@ -6,10 +6,10 @@ export default function ApiDefinitions(props) {
       {props.meaning.definitions.map(function(definition, index) {
         return (
           <div key={index}>
-            <ul>
+            <ol start={index+1}>
               <li>{definition.definition}</li>
               <em>{definition.example}</em>
-            </ul>
+            </ol>
           </div>
         );
       })}

@@ -1,0 +1,27 @@
+.ApiResults h2 {
+    display: inline;
+    font-family: Playfair Display, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 65px;
+    order: 0;
+    margin-right: 10px;
+}
+
+.ApiResults h3 {
+    display: inline;
+    font-family: Playfair Display, serif;
+    font-style: normal;
+    font-size: 31px;
+    line-height: 43px;
+    color: #4a7d95;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.meaning-number {
+    background-color: #f4f4f4;
+    padding: 5px;
+}

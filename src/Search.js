@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ApiResults from "./ApiResults";
+import "./Search.css";
 
 export default function Search(props) {
   let [keyword, setKeyword] = useState(props.defaultWord);
@@ -33,19 +34,27 @@ export default function Search(props) {
   }
   
     if (loaded) {
-     return ( 
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Type a word"
-          onChange={updateSearchedKeyword}
-        ></input>
-        <input type="submit" value="Search"></input>
-      </form>
-      <ApiResults apiResults={results} />
-    </div>
-  );
+     return (
+       <div className="Search">
+         <section>
+  
+           <form onSubmit={handleSubmit}>
+             <input
+               className="input-text"
+               type="search"
+               placeholder="Type a word.."
+               onChange={updateSearchedKeyword}
+             ></input>
+             <input
+               className="input-submit"
+               type="submit"
+               value="🔍"
+             ></input>
+           </form></section>
+           <ApiResults apiResults={results} />
+         
+       </div>
+     );
 } else {
   loadResults();
   return "Loading.."
