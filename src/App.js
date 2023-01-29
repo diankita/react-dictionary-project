@@ -9,6 +9,7 @@ function App() {
         <img
           src="https://cdn1.iconfinder.com/data/icons/book_mac/512/Dictionary.png"
           className="dictionary-img img-fluid"
+          alt="header-img"
         ></img>
         <h1>Dictionary</h1>
       </header>
