@@ -27,7 +27,7 @@ body {
   color: #6faef1;
 }
 
-.App img {
+.App .dictionary-img {
   max-width: 80px;
   display: block;
   margin: 0px auto;
