@@ -44,7 +44,6 @@ export default function Search(props) {
 
   function handlePexelsApiResponse(response) {
     setPhotos(response.data.photos);
-    console.log(response.data.photos)
   }
 
   if (loaded) {
